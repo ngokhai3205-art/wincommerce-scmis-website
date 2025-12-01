@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact – WinCommerce SCMIS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li class="logo">WinCommerce SCMIS</li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">SCM Features</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<main class="container">
+    <section>
+        <h2>Contact Project Team</h2>
+        <p class="contact-note">
+            This contact form is a prototype interface for WinCommerce SCMIS users (store managers, DC managers,
+            and suppliers) to send questions or support requests to the project team.
+        </p>
+
+        <div class="contact-layout">
+
+            <!-- Info block -->
+            <div class="card contact-info">
+                <h3>Project Information</h3>
+                <ul>
+                    <li><strong>Course:</strong> Management of Information Systems</li>
+                    <li><strong>Project:</strong> SCM Information System for Masan Group – WinCommerce</li>
+                    <li><strong>Group:</strong> Group 10 – MIS 2025</li>
+                </ul>
+
+                <p style="margin-top: 14px; font-size: 13px; color:#6b7280;">
+                    This prototype does not send real emails. It is used to demonstrate form design,
+                    validation, and error-handling features for the MIS course.
+                </p>
+            </div>
+
+            <!-- Form block -->
+            <div class="card contact-card">
+                <h3>Contact Form</h3>
+                <p class="contact-note">
+                    Fields marked with <span style="color:#be123c;">*</span> are required.
+                </p>
+
+                <form id="contactForm" novalidate>
+                    <div class="form-group">
+                        <label for="name">Full Name <span style="color:#be123c;">*</span></label>
+                        <input type="text" id="name" name="name" placeholder="Ngô Quang Khải" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email <span style="color:#be123c;">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                        <small>Use a valid email format (e.g., name@domain.com).</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone <span style="color:#be123c;">*</span></label>
+                        <input type="text" id="phone" name="phone" placeholder="09xxxxxxxx" pattern="[0-9]{9,11}" required>
+                        <small>Digits only, 9–11 numbers.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message <span style="color:#be123c;">*</span></label>
+                        <textarea id="message" name="message" rows="4"
+                                  placeholder="Describe your issue or question…" minlength="10" required></textarea>
+                        <small>Message should have at least 10 characters.</small>
+                    </div>
+
+                    <button type="submit" class="btn primary full-width">Submit</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+<footer>
+    © 2025 Masan Group – WinCommerce · SCMIS Prototype for MIS Course · Group 10
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
